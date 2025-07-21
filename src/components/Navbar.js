@@ -3,10 +3,10 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
     return ( 
-        <nav className="bg-stone-900 text-white p-2"> 
+        <nav style={{ backgroundColor: '#2C2C2C', height: '75px' }} className="text-white p-2">
             <div className="flex items-center">
                 <Link to="/"> 
-                    <img src={logo} alt="Logo" style={{ width: "6rem", height: "auto" }} />
+                    <img src={logo} alt="Logo" style={{ width: "60px", height: "60px" }} />
                 </Link>
             </div>   
         </nav>
