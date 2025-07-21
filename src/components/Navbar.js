@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import back from "../assets/back.png";  // Імпорт зображення
 
 const Navbar = () => {
   return (
@@ -15,10 +16,21 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div style={{ backgroundColor: "#D9D9D9", minHeight: "100vh" }}>
+      <div
+        style={{
+          backgroundColor: "#D9D9D9",
+          minHeight: "100vh",
+          backgroundImage: `url(${back})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",               
+          backgroundPosition: "center",          
+        }}
+      >
+        {}
       </div>
     </>
   );
 };
 
 export default Navbar;
+
