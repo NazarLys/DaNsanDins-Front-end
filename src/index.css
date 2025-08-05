@@ -24,10 +24,6 @@ a {
   text-decoration: inherit;
 }
 
-a:hover {
-transform: translateY(1.5px); 
-}
-
 body {
   margin: 0;
   min-width: 320px;
@@ -78,7 +74,7 @@ button:hover {
   left: -2.5px;
   bottom: 1px;
   height: 1.5px;
-  width: 110%;
+  width: 105%;
   background-color: #d74c4c; 
   transform: translateY(0);
   transition: transform 0.3s ease;
@@ -100,7 +96,7 @@ button:hover {
   left: -3.5px;
   bottom: 1px;
   height: 1.5px;
-  width: 110%;
+  width: 115%;
   background-color: #d74c4c; 
   transform: translateY(0);
   transition: transform 0.3s ease;
@@ -110,24 +106,23 @@ button:hover {
   transform: translateY(6px); 
 }
 
-.underline2 {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 4px; 
+.texthover:hover {
+  transform: translateY(1.5px);
 }
 
-.underline2::after {
-  content: "";
-  position: absolute;
-  left: -5.5px;
-  bottom: 1px;
-  height: 1.5px;
-  width: 110%;
-  background-color: #d74c4c; 
-  transform: translateY(0);
-  transition: transform 0.3s ease;
+.add-button {
+  width: 3cm;
+  height: 1.5cm;
+  background-color: #d3d3d3;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.underline2:hover::after {
-  transform: translateY(6px); 
+.add-button:hover {
+  background-color: #8c8989;
+  cursor: none;
 }
